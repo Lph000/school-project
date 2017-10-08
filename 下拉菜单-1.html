@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8">
+<title></title>
+<style type="text/css">
+*{font-weight: bold}
+div{
+    padding:0;
+    margin:1px;
+    color:#fff;
+    float:left;
+    width:10em;
+    background:#333;
+    text-align:center;
+}
+span{
+    width:10em;
+}
+div:hover{
+    color:#000;
+    background:#fff;
+}
+p{
+    padding:0.5em 0;
+    margin:0;
+    color:#000;
+}
+p:hover{
+    background:yellow;
+}
+.drop{
+    display:none;
+    position:relative;
+    left:-1px;
+}
+.title:hover .drop{
+    display:block;
+    background:#fff;
+    box-shadow:2px 2px 2px #ccc;
+}
+.title:hover{
+    background:yellow;
+}
+span{
+    display:block;
+    padding:0.5em 0;
+}
+</style>
+</head>
+<body>
+   <div class="title">
+       <span>前端</span>
+       <div class="drop">
+       <p>HTML5</p>
+       <p>CSS3</p>
+       <p>JAVASCRIPT</p>
+       </div>
+   </div>
+    <div class="title">
+       <span>后端</span>
+       <div class="drop">
+       <p>JAVA</p>
+       <p>PHP</p>
+       <p>Python</p>
+       </div>
+   </div> 
+    <div class="title">
+       <span>移动端</span>
+       <div class="drop">
+       <p>Android</p>
+       <p>IOS</p>
+       <p>React-Native</p>
+       </div>
+   </div> 
+</body>
+</html>

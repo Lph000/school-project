@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset=utf-8">
+<title>JavaScript 时间显示</title>
+</head>
+<body>
+<span id=time></span>
+<script type="text/javascript">
+function hms(objD)
+{
+	var Time
+	var hour = objD.getHours();
+	var minute = objD.getMinutes();
+	var secound = objD.getSeconds();
+	Time =hour + ":" + minute + ":" + secound
+	return(Time);
+}
+function tick()
+{
+	var now;
+	now = new Date();
+	document.getElementById("time").innerHTML = hms(now);
+        window.setTimeout("tick()", 1000);
+}
+tick();
+</script>
+</body>
+</html>
